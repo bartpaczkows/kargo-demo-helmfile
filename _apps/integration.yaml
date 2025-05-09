@@ -1,0 +1,55 @@
+- destination:
+    name: ci-dev-01
+    namespace: ci-spring-demo-kipx  # change here with the name of the project
+  source:
+    plugin:
+      env:
+        CLUSTER_TYPE: cloud
+        VAULT_NAMESPACE: eng/dev/kipx
+        DATACENTER_CODE_NAME: eng
+        INGRESS_HOSTNAME_SUFFIX: kyriba.io
+        DATACENTER_GEM_NAME: none
+        KIP_ENV_ID: kipx
+        PLATFORM_INSTANCE_ID: eng-kip-x
+        RANCHER_PROJECT_ID: p-mgs5p
+        RANCHER_CLUSTER_ID: c-7s5x9
+        APP_VERSION: "2025.04.08-4"
+        CLOUD_PLATFORM_INSTANCE_ID: ci-dev
+# - destination:
+#     name: ci-dev-01
+#   source:
+#     plugin:
+#       env:
+#         CLUSTER_TYPE: cloud
+#         VAULT_NAMESPACE: eng/dev
+#         DATACENTER_CODE_NAME: dev
+#         INGRESS_HOSTNAME_SUFFIX: dev.kod.kyriba.com
+#         DATACENTER_GEM_NAME: none
+#         KIP_ENV_ID: KIP1
+#         PLATFORM_INSTANCE_ID: eng-kip-1
+
+# - destination:
+#     name: ci-dev-01
+#   source:
+#     plugin:
+#       env:
+#         CLUSTER_TYPE: cloud
+#         VAULT_NAMESPACE: eng/dev
+#         DATACENTER_CODE_NAME: dev
+#         INGRESS_HOSTNAME_SUFFIX: dev.kod.kyriba.com
+#         DATACENTER_GEM_NAME: none
+#         KIP_ENV_ID: KIP2
+#         PLATFORM_INSTANCE_ID: eng-kip-2
+
+# - destination:
+#     name: ci-dev-01
+#   source:
+#     plugin:
+#       env:
+#         CLUSTER_TYPE: cloud
+#         VAULT_NAMESPACE: eng/dev
+#         DATACENTER_CODE_NAME: dev
+#         INGRESS_HOSTNAME_SUFFIX: dev.kod.kyriba.com
+#         DATACENTER_GEM_NAME: none
+#         PLATFORM_INSTANCE_ID: eng-kip-3
+#         KIP_ENV_ID: KIP3

@@ -1,0 +1,62 @@
+# - destination:
+#     name: fr1-inf-s01
+#   source:
+#     plugin:
+#       env:
+#         CLUSTER_TYPE: cloud
+#         VAULT_NAMESPACE: fr1/inf
+#         DATACENTER_CODE_NAME: fr1
+#         INGRESS_HOSTNAME_SUFFIX: fr1.cloud.kyriba.com
+#         DATACENTER_GEM_NAME: ruby
+#         KIP_ENV_ID: none
+
+# - destination:
+#     name: fr2-inf-s01
+#   source:
+#     plugin:
+#       env:
+#         CLUSTER_TYPE: cloud
+#         VAULT_NAMESPACE: fr2/inf
+#         DATACENTER_CODE_NAME: fr2
+#         INGRESS_HOSTNAME_SUFFIX: fr2.cloud.kyriba.com
+#         DATACENTER_GEM_NAME: sapphire
+#         KIP_ENV_ID: none
+
+
+# - destination:
+#     name: us1-inf-s01
+#   source:
+#     plugin:
+#       env:
+#         CLUSTER_TYPE: cloud
+#         VAULT_NAMESPACE: us1/inf
+#         DATACENTER_CODE_NAME: us1
+#         INGRESS_HOSTNAME_SUFFIX: us1.cloud.kyriba.com
+#         DATACENTER_GEM_NAME: emerald
+#         KIP_ENV_ID: none
+
+
+# - destination:
+#     name: us2-inf-s01
+#   source:
+#     plugin:
+#       env:
+#         CLUSTER_TYPE: cloud
+#         VAULT_NAMESPACE: us2/inf
+#         DATACENTER_CODE_NAME: us2
+#         INGRESS_HOSTNAME_SUFFIX: us2.cloud.kyriba.com
+#         DATACENTER_GEM_NAME: diamond
+#         KIP_ENV_ID: none
+
+
+# - destination:
+#     name: ca1-inf-s01
+#   source:
+#     plugin:
+#       env:
+#         CLUSTER_TYPE: cloud
+#         VAULT_NAMESPACE: ca1/inf
+#         DATACENTER_CODE_NAME: ca1
+#         INGRESS_HOSTNAME_SUFFIX: ca1.cloud.kyriba.com
+#         DATACENTER_GEM_NAME: ammolite
+#         KIP_ENV_ID: none

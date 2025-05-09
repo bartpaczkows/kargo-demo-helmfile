@@ -1,0 +1,107 @@
+# - destination:
+#     name: fr1-prd-a01
+#   source:
+#     plugin:
+#       env:
+#         CLUSTER_TYPE: onprem
+#         VAULT_NAMESPACE: fr1/prd_a
+#         DATACENTER_CODE_NAME: fr1
+#         INGRESS_HOSTNAME_SUFFIX: ruby.prod.cloud.kyriba.com
+#         DATACENTER_GEM_NAME: ruby
+#         KIP_ENV_ID: none
+
+# - destination:
+#     name: fr2-prd-a01
+#   source:
+#     plugin:
+#       env:
+#         CLUSTER_TYPE: onprem
+#         VAULT_NAMESPACE: fr2/prd_a
+#         DATACENTER_CODE_NAME: fr2
+#         INGRESS_HOSTNAME_SUFFIX: sapphire.prod.cloud.kyriba.com
+#         DATACENTER_GEM_NAME: sapphire
+#         KIP_ENV_ID: none
+
+# - destination:
+#     name: fr3-prd-a02
+#   source:
+#     plugin:
+#       env:
+#         CLUSTER_TYPE: cloud
+#         VAULT_NAMESPACE: fr3/prd_a
+#         DATACENTER_CODE_NAME: fr3
+#         INGRESS_HOSTNAME_SUFFIX: topaz.prod.cloud.kyriba.com
+#         DATACENTER_GEM_NAME: topaz
+#         KIP_ENV_ID: none
+
+# - destination:
+#     name: us1-prd-a01
+#   source:
+#     plugin:
+#       env:
+#         CLUSTER_TYPE: onprem
+#         VAULT_NAMESPACE: us1/prd_a
+#         DATACENTER_CODE_NAME: us1
+#         INGRESS_HOSTNAME_SUFFIX: emerald.prod.cloud.kyriba.com
+#         DATACENTER_GEM_NAME: emerald
+#         KIP_ENV_ID: none
+
+# - destination:
+#     name: us2-prd-a01
+#   source:
+#     plugin:
+#       env:
+#         CLUSTER_TYPE: onprem
+#         VAULT_NAMESPACE: us2/prd_a
+#         DATACENTER_CODE_NAME: us2
+#         INGRESS_HOSTNAME_SUFFIX: diamond.prod.cloud.kyriba.com
+#         DATACENTER_GEM_NAME: diamond
+#         KIP_ENV_ID: none
+
+# - destination:
+#     name: us3-prd-a02
+#   source:
+#     plugin:
+#       env:
+#         CLUSTER_TYPE: cloud
+#         VAULT_NAMESPACE: us3/prd_a
+#         DATACENTER_CODE_NAME: us3
+#         INGRESS_HOSTNAME_SUFFIX: opal.prod.cloud.kyriba.com
+#         DATACENTER_GEM_NAME: opal
+#         KIP_ENV_ID: none
+
+# - destination:
+#     name: ac1-prd-a02
+#   source:
+#     plugin:
+#       env:
+#         CLUSTER_TYPE: cloud
+#         VAULT_NAMESPACE: ac1/prd_a
+#         DATACENTER_CODE_NAME: ac1
+#         INGRESS_HOSTNAME_SUFFIX: jade.prod.cloud.kyriba.com
+#         DATACENTER_GEM_NAME: jade
+#         KIP_ENV_ID: none
+
+# - destination:
+#     name: ca1-prd-a02
+#   source:
+#     plugin:
+#       env:
+#         CLUSTER_TYPE: cloud
+#         VAULT_NAMESPACE: ca1/prd_a
+#         DATACENTER_CODE_NAME: ca1
+#         INGRESS_HOSTNAME_SUFFIX: ammolite.prod.cloud.kyriba.com
+#         DATACENTER_GEM_NAME: ammolite
+#         KIP_ENV_ID: none
+
+# - destination:
+#     name: eu-west-3-data-prd-01-rancher-eks
+#   source:
+#     plugin:
+#       env:
+#         CLUSTER_TYPE: cloud
+#         VAULT_NAMESPACE: data-platform/eu-west-3-data-prd-01-rancher-eks
+#         DATACENTER_CODE_NAME: data
+#         INGRESS_HOSTNAME_SUFFIX: prd.eu-west-3-data.cloud.kyriba.com
+#         DATACENTER_GEM_NAME: none
+#         KIP_ENV_ID: none

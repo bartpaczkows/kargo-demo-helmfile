@@ -1,0 +1,107 @@
+# - destination:
+#     name: fr1-sbx-a01
+#   source:
+#     plugin:
+#       env:
+#         CLUSTER_TYPE: onprem
+#         VAULT_NAMESPACE: fr1/sbx_a
+#         DATACENTER_CODE_NAME: fr1
+#         INGRESS_HOSTNAME_SUFFIX: ruby.sbx.cloud.kyriba.com
+#         DATACENTER_GEM_NAME: ruby
+#         KIP_ENV_ID: none
+
+# - destination:
+#     name: fr2-sbx-a01
+#   source:
+#     plugin:
+#       env:
+#         CLUSTER_TYPE: onprem
+#         VAULT_NAMESPACE: fr2/sbx_a
+#         DATACENTER_CODE_NAME: fr2
+#         INGRESS_HOSTNAME_SUFFIX: sapphire.sbx.cloud.kyriba.com
+#         DATACENTER_GEM_NAME: sapphire
+#         KIP_ENV_ID: none
+
+# - destination:
+#     name: fr3-sbx-a02
+#   source:
+#     plugin:
+#       env:
+#         CLUSTER_TYPE: cloud
+#         VAULT_NAMESPACE: fr3/sbx_a
+#         DATACENTER_CODE_NAME: fr3
+#         INGRESS_HOSTNAME_SUFFIX: topaz.sbx.cloud.kyriba.com
+#         DATACENTER_GEM_NAME: topaz
+#         KIP_ENV_ID: none
+
+# - destination:
+#     name: us1-sbx-a01
+#   source:
+#     plugin:
+#       env:
+#         CLUSTER_TYPE: onprem
+#         VAULT_NAMESPACE: us1/sbx_a
+#         DATACENTER_CODE_NAME: us1
+#         INGRESS_HOSTNAME_SUFFIX: emerald.sbx.cloud.kyriba.com
+#         DATACENTER_GEM_NAME: emerald
+#         KIP_ENV_ID: none
+
+# - destination:
+#     name: us2-sbx-a01
+#   source:
+#     plugin:
+#       env:
+#         CLUSTER_TYPE: onprem
+#         VAULT_NAMESPACE: us2/sbx_a
+#         DATACENTER_CODE_NAME: us2
+#         INGRESS_HOSTNAME_SUFFIX: diamond.sbx.cloud.kyriba.com
+#         DATACENTER_GEM_NAME: diamond
+#         KIP_ENV_ID: none
+
+# - destination:
+#     name: us3-sbx-a02
+#   source:
+#     plugin:
+#       env:
+#         CLUSTER_TYPE: cloud
+#         VAULT_NAMESPACE: us3/sbx_a
+#         DATACENTER_CODE_NAME: us3
+#         INGRESS_HOSTNAME_SUFFIX: opal.sbx.cloud.kyriba.com
+#         DATACENTER_GEM_NAME: opal
+#         KIP_ENV_ID: none
+
+# - destination:
+#     name: ac1-sbx-a02
+#   source:
+#     plugin:
+#       env:
+#         CLUSTER_TYPE: cloud
+#         VAULT_NAMESPACE: ac1/sbx_a
+#         DATACENTER_CODE_NAME: ac1
+#         INGRESS_HOSTNAME_SUFFIX: jade.sbx.cloud.kyriba.com
+#         DATACENTER_GEM_NAME: jade
+#         KIP_ENV_ID: none
+
+# - destination:
+#     name: ca1-sbx-a02
+#   source:
+#     plugin:
+#       env:
+#         CLUSTER_TYPE: cloud
+#         VAULT_NAMESPACE: ca1/sbx_a
+#         DATACENTER_CODE_NAME: ca1
+#         INGRESS_HOSTNAME_SUFFIX: ammolite.sbx.cloud.kyriba.com
+#         DATACENTER_GEM_NAME: ammolite
+#         KIP_ENV_ID: none
+
+# - destination:
+#     name: eu-west-3-data-sbx-01-rancher-eks
+#   source:
+#     plugin:
+#       env:
+#         CLUSTER_TYPE: cloud
+#         VAULT_NAMESPACE: data-platform/eu-west-3-data-sbx-01-rancher-eks
+#         DATACENTER_CODE_NAME: data
+#         INGRESS_HOSTNAME_SUFFIX: sbx.eu-west-3-data.cloud.kyriba.com
+#         DATACENTER_GEM_NAME: none
+#         KIP_ENV_ID: none

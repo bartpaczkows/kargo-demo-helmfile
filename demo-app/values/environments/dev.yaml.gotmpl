@@ -1,0 +1,14 @@
+ingress:
+  enabled: true
+  annotations: 
+    kubernetes.io/ingress.class: nginx
+    # kubernetes.io/tls-acme: "true"
+  hosts:
+    - host: ci-spring-demo.{{ requiredEnv "KIP_ENV_ID" }}.{{ requiredEnv "INGRESS_HOSTNAME_SUFFIX" }}
+      paths:
+      - '/'
+  tls: []
+
+katConfig:
+  data:
+    ENV_ID: {{ requiredEnv "KIP_ENV_ID" }}

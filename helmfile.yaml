@@ -1,0 +1,18 @@
+
+environments:
+  default:
+    missingFileHandler: Info
+    values:
+      - 'values/_versions.yaml.gotmpl'
+      - 'values/app-versions/{{ requiredEnv "APP_VERSION" }}.yaml.gotmpl'
+      - 'values/cluster-types/{{ requiredEnv "CLUSTER_TYPE" }}.yaml.gotmpl'
+      - 'values/environments/{{ requiredEnv "ENV" }}.yaml.gotmpl'
+      - 'values/datacenters/{{ requiredEnv "DATACENTER_CODE_NAME" }}.yaml.gotmpl'
+      - 'values/cloud-platform-instances/{{ requiredEnv "CLOUD_PLATFORM_INSTANCE_ID" }}.yaml.gotmpl'
+
+
+helmfiles:
+- path: "*/helmfile.yaml"
+  values:
+  - {{ toYaml .StateValues | nindent 4 }}
+

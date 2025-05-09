@@ -1,0 +1,15 @@
+
+
+
+releases:
+- name: demo-app
+  chart: ./chart/demo-app-{{ .StateValues.chartsVersions.demo_app }}.tgz
+  # version: {{ .StateValues.chartsVersions.demo_app }}.tgz
+  missingFileHandler: Info
+  values:
+  - 'values/_base.yaml.gotmpl'
+  - 'values/app-versions/{{ requiredEnv "APP_VERSION" }}.yaml.gotmpl'
+  - 'values/cluster-types/{{ requiredEnv "CLUSTER_TYPE" }}.yaml.gotmpl'
+  - 'values/environments/{{ requiredEnv "ENV" }}.yaml.gotmpl'
+  - 'values/datacenters/{{ requiredEnv "DATACENTER_CODE_NAME" }}.yaml.gotmpl'
+  - 'values/cloud-platform-instances/{{ requiredEnv "CLOUD_PLATFORM_INSTANCE_ID" }}.yaml.gotmpl'
