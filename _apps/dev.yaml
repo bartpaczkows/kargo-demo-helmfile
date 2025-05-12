@@ -1,34 +1,34 @@
-# - destination:
-#     name: ci-dev-01
-#     namespace: ci-spring-demo-kip0  # change here with the name of the project
-#   source:
-#     plugin:
-#       env:
-#         CLUSTER_TYPE: cloud
-#         VAULT_NAMESPACE: eng/dev/kip0
-#         DATACENTER_CODE_NAME: eng
-#         INGRESS_HOSTNAME_SUFFIX: kyriba.io
-#         DATACENTER_GEM_NAME: none
-#         KIP_ENV_ID: kip0
-#         PLATFORM_INSTANCE_ID: eng-kip-0
-#         CLOUD_PLATFORM_INSTANCE_ID: ci-dev
-#         APP_VERSION: ""
+- destination:
+    name: in-cluster
+    namespace: dev-ci-spring-demo-kip0  # change here with the name of the project
+  source:
+    plugin:
+      env:
+        CLUSTER_TYPE: cloud
+        VAULT_NAMESPACE: eng/dev/kip0
+        DATACENTER_CODE_NAME: eng
+        INGRESS_HOSTNAME_SUFFIX: demo.io
+        DATACENTER_GEM_NAME: none
+        KIP_ENV_ID: kip0
+        PLATFORM_INSTANCE_ID: eng-kip-0
+        CLOUD_PLATFORM_INSTANCE_ID: ci-dev
+        APP_VERSION: ""
 
-# - destination:
-#     name: ci-dev-01
-#     namespace: ci-spring-demo-kip1  # change here with the name of the project
-#   source:
-#     plugin:
-#       env:
-#         CLUSTER_TYPE: cloud
-#         VAULT_NAMESPACE: eng/dev/kip1
-#         DATACENTER_CODE_NAME: eng
-#         INGRESS_HOSTNAME_SUFFIX: kyriba.io
-#         DATACENTER_GEM_NAME: none
-#         KIP_ENV_ID: kip1
-#         PLATFORM_INSTANCE_ID: eng-kip-1
-#         APP_VERSION: next
-#         CLOUD_PLATFORM_INSTANCE_ID: ci-dev
+- destination:
+    name: in-cluster
+    namespace: dev-ci-spring-demo-kip1  # change here with the name of the project
+  source:
+    plugin:
+      env:
+        CLUSTER_TYPE: cloud
+        VAULT_NAMESPACE: eng/dev/kip1
+        DATACENTER_CODE_NAME: eng
+        INGRESS_HOSTNAME_SUFFIX: demo.io
+        DATACENTER_GEM_NAME: none
+        KIP_ENV_ID: kip1
+        PLATFORM_INSTANCE_ID: eng-kip-1
+        APP_VERSION: next
+        CLOUD_PLATFORM_INSTANCE_ID: ci-dev
   
 # - destination:
 #     name: ci-dev-01
@@ -39,7 +39,7 @@
 #         CLUSTER_TYPE: cloud
 #         VAULT_NAMESPACE: eng/dev/kip2
 #         DATACENTER_CODE_NAME: eng
-#         INGRESS_HOSTNAME_SUFFIX: kyriba.io
+#         INGRESS_HOSTNAME_SUFFIX: demo.io
 #         DATACENTER_GEM_NAME: none
 #         KIP_ENV_ID: kip2
 #         PLATFORM_INSTANCE_ID: eng-kip-2
@@ -55,7 +55,7 @@
 #         CLUSTER_TYPE: cloud
 #         VAULT_NAMESPACE: eng/dev/kip3
 #         DATACENTER_CODE_NAME: eng
-#         INGRESS_HOSTNAME_SUFFIX: kyriba.io
+#         INGRESS_HOSTNAME_SUFFIX: demo.io
 #         DATACENTER_GEM_NAME: none
 #         KIP_ENV_ID: kip3
 #         PLATFORM_INSTANCE_ID: eng-kip-3
@@ -72,7 +72,7 @@
 #         CLUSTER_TYPE: cloud
 #         VAULT_NAMESPACE: eng/dev/kip4
 #         DATACENTER_CODE_NAME: eng
-#         INGRESS_HOSTNAME_SUFFIX: kyriba.io
+#         INGRESS_HOSTNAME_SUFFIX: demo.io
 #         DATACENTER_GEM_NAME: none
 #         KIP_ENV_ID: kip4
 #         PLATFORM_INSTANCE_ID: eng-kip-4
@@ -90,7 +90,7 @@
 #         CLUSTER_TYPE: cloud
 #         VAULT_NAMESPACE: eng/dev/kipy
 #         DATACENTER_CODE_NAME: eng
-#         INGRESS_HOSTNAME_SUFFIX: kipy.proto.kyriba.io
+#         INGRESS_HOSTNAME_SUFFIX: kipy.proto.demo.io
 #         DATACENTER_GEM_NAME: none
 #         KIP_ENV_ID: kipy
 #         PLATFORM_INSTANCE_ID: eng-kip-y

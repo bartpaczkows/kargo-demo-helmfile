@@ -6,7 +6,7 @@
 #         CLUSTER_TYPE: onprem
 #         VAULT_NAMESPACE: kfr/fpr_c
 #         DATACENTER_CODE_NAME: kfr
-#         INGRESS_HOSTNAME_SUFFIX: gemini.proto.cloud.kyriba.com
+#         INGRESS_HOSTNAME_SUFFIX: gemini.proto.cloud.demo.com
 #         DATACENTER_GEM_NAME: kfr
 #         KIP_ENV_ID: none
 
@@ -18,7 +18,7 @@
 #         CLUSTER_TYPE: onprem
 #         VAULT_NAMESPACE: kfr/tpr_a
 #         DATACENTER_CODE_NAME: kfr
-#         INGRESS_HOSTNAME_SUFFIX: proto.cloud.kyriba.com
+#         INGRESS_HOSTNAME_SUFFIX: proto.cloud.demo.com
 #         DATACENTER_GEM_NAME: kfr
 #         KIP_ENV_ID: none
 
@@ -30,6 +30,6 @@
 #         CLUSTER_TYPE: cloud
 #         VAULT_NAMESPACE: data-platform/fr4-dp-kfr/
 #         DATACENTER_CODE_NAME: data
-#         INGRESS_HOSTNAME_SUFFIX: kfr.eu-west-3-data.cloud.kyriba.com
+#         INGRESS_HOSTNAME_SUFFIX: kfr.eu-west-3-data.cloud.demo.com
 #         DATACENTER_GEM_NAME: kfr
 #         KIP_ENV_ID: none

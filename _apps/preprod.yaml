@@ -6,7 +6,7 @@
 #         CLUSTER_TYPE: onprem
 #         VAULT_NAMESPACE: fr1/pre_a
 #         DATACENTER_CODE_NAME: fr1
-#         INGRESS_HOSTNAME_SUFFIX: ruby.preprod.cloud.kyriba.com
+#         INGRESS_HOSTNAME_SUFFIX: ruby.preprod.cloud.demo.com
 #         DATACENTER_GEM_NAME: ruby
 #         KIP_ENV_ID: none
 
@@ -18,7 +18,7 @@
 #         CLUSTER_TYPE: onprem
 #         VAULT_NAMESPACE: fr2/pre_a
 #         DATACENTER_CODE_NAME: fr2
-#         INGRESS_HOSTNAME_SUFFIX: sapphire.preprod.cloud.kyriba.com
+#         INGRESS_HOSTNAME_SUFFIX: sapphire.preprod.cloud.demo.com
 #         DATACENTER_GEM_NAME: sapphire
 #         KIP_ENV_ID: none
 
@@ -30,7 +30,7 @@
 #         CLUSTER_TYPE: cloud
 #         VAULT_NAMESPACE: fr3/pre_a
 #         DATACENTER_CODE_NAME: fr3
-#         INGRESS_HOSTNAME_SUFFIX: topaz.preprod.cloud.kyriba.com
+#         INGRESS_HOSTNAME_SUFFIX: topaz.preprod.cloud.demo.com
 #         DATACENTER_GEM_NAME: topaz
 #         KIP_ENV_ID: none
 
@@ -42,7 +42,7 @@
 #         CLUSTER_TYPE: onprem
 #         VAULT_NAMESPACE: us1/pre_a
 #         DATACENTER_CODE_NAME: us1
-#         INGRESS_HOSTNAME_SUFFIX: emerald.preprod.cloud.kyriba.com
+#         INGRESS_HOSTNAME_SUFFIX: emerald.preprod.cloud.demo.com
 #         DATACENTER_GEM_NAME: emerald
 #         KIP_ENV_ID: none
 
@@ -54,7 +54,7 @@
 #         CLUSTER_TYPE: onprem
 #         VAULT_NAMESPACE: us2/pre_a
 #         DATACENTER_CODE_NAME: us2
-#         INGRESS_HOSTNAME_SUFFIX: diamond.preprod.cloud.kyriba.com
+#         INGRESS_HOSTNAME_SUFFIX: diamond.preprod.cloud.demo.com
 #         DATACENTER_GEM_NAME: diamond
 #         KIP_ENV_ID: none
 
@@ -66,7 +66,7 @@
 #         CLUSTER_TYPE: cloud
 #         VAULT_NAMESPACE: us3/pre_a
 #         DATACENTER_CODE_NAME: us3
-#         INGRESS_HOSTNAME_SUFFIX: opal.preprod.cloud.kyriba.com
+#         INGRESS_HOSTNAME_SUFFIX: opal.preprod.cloud.demo.com
 #         DATACENTER_GEM_NAME: opal
 #         KIP_ENV_ID: none
 
@@ -78,7 +78,7 @@
 #         CLUSTER_TYPE: cloud
 #         VAULT_NAMESPACE: ac1/pre_a
 #         DATACENTER_CODE_NAME: ac1
-#         INGRESS_HOSTNAME_SUFFIX: jade.preprod.cloud.kyriba.com
+#         INGRESS_HOSTNAME_SUFFIX: jade.preprod.cloud.demo.com
 #         DATACENTER_GEM_NAME: jade
 #         KIP_ENV_ID: none
 
@@ -90,7 +90,7 @@
 #         CLUSTER_TYPE: cloud
 #         VAULT_NAMESPACE: ca1/pre_a
 #         DATACENTER_CODE_NAME: ca1
-#         INGRESS_HOSTNAME_SUFFIX: ammolite.preprod.cloud.kyriba.com
+#         INGRESS_HOSTNAME_SUFFIX: ammolite.preprod.cloud.demo.com
 #         DATACENTER_GEM_NAME: ammolite
 #         KIP_ENV_ID: none
 
@@ -102,6 +102,6 @@
 #         CLUSTER_TYPE: cloud
 #         VAULT_NAMESPACE: data-platform/eu-west-3-data-pre-01-rancher-eks
 #         DATACENTER_CODE_NAME: data
-#         INGRESS_HOSTNAME_SUFFIX: pre.eu-west-3-data.cloud.kyriba.com
+#         INGRESS_HOSTNAME_SUFFIX: pre.eu-west-3-data.cloud.demo.com
 #         DATACENTER_GEM_NAME: none
 #         KIP_ENV_ID: none

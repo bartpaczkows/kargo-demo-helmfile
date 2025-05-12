@@ -1,0 +1,74 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: dargo-demo-helmfile-dev
+  labels:
+    chart: argocd-applicationse
+spec:
+  goTemplate: true
+  goTemplateOptions: ["missingkey=default"]
+  generators:
+  - git:
+      repoURL: https://github.com/bartpaczkows/kargo-demo-helmfile.git
+      revision: dev
+      files:
+      - path: "_apps/dev.yaml"
+  syncPolicy:
+    preserveResourcesOnDeletion: true
+  template:
+    metadata:
+      name: 'app.{{`{{.destination.namespace}}`}}'
+      labels:
+        name: kargo-demo-helmfile
+        component: app
+    spec:
+      project: dargo-demo-helmfile-dev
+      source:
+        repoURL: {{ .Values.git.repoURL }}
+        targetRevision: {{ .Values.git.branchName }}
+        path: '.'
+        plugin:
+          name: helmfile
+          env:
+            - name: ENV
+              value: dev
+            - name: CLUSTER_NAME
+              value: '{{`{{.destination.name}}`}}'
+            - name: CLUSTER_TYPE
+              value: '{{`{{.source.plugin.env.CLUSTER_TYPE}}`}}'
+            - name: VAULT_NAMESPACE
+              value: '{{`{{.source.plugin.env.VAULT_NAMESPACE}}`}}'
+            - name: INGRESS_HOSTNAME_SUFFIX
+              value: '{{`{{.source.plugin.env.INGRESS_HOSTNAME_SUFFIX}}`}}'
+            - name: DATACENTER_CODE_NAME
+              value: '{{`{{.source.plugin.env.DATACENTER_CODE_NAME}}`}}'
+            - name: DATACENTER_GEM_NAME
+              value: '{{`{{.source.plugin.env.DATACENTER_GEM_NAME}}`}}'
+            - name: PLATFORM_INSTANCE_ID
+              value: '{{`{{.source.plugin.env.PLATFORM_INSTANCE_ID}}`}}'
+            - name: RANCHER_PROJECT_ID
+              value: '{{`{{ default "" .source.plugin.env.RANCHER_PROJECT_ID }}`}}'
+            - name: RANCHER_CLUSTER_ID
+              value: '{{`{{ default "" .source.plugin.env.RANCHER_CLUSTER_ID }}`}}'
+            - name: CLOUD_PLATFORM_INSTANCE_ID
+              value: '{{`{{ default "DEFAULT" .source.plugin.env.CLOUD_PLATFORM_INSTANCE_ID }}`}}'
+            - name: APP_VERSION
+              value: '{{`{{ default "DEFAULT" .source.plugin.env.APP_VERSION }}`}}'
+            - name: KIP_ENV_ID
+              value: '{{`{{.source.plugin.env.KIP_ENV_ID}}`}}'
+            - name: PROJECT_NAME
+              value: dargo-demo-helmfile
+            - name: GROUP_NAME
+              value: dargo-demo
+      destination:
+        name: '{{`{{.destination.name}}`}}'
+        namespace: kargo-demo-helmfile
+      syncPolicy:
+        syncOptions:
+          - CreateNamespace=true
+          - PruneLast=true
+        automated: 
+          prune: true
+          allowEmpty: true
+          selfHeal: true
+

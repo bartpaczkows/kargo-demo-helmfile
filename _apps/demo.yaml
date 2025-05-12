@@ -6,7 +6,7 @@
 #         CLUSTER_TYPE: onprem
 #         VAULT_NAMESPACE: us1/sbx_d
 #         DATACENTER_CODE_NAME: us1
-#         INGRESS_HOSTNAME_SUFFIX: emerald.dmo.cloud.kyriba.com
+#         INGRESS_HOSTNAME_SUFFIX: emerald.dmo.cloud.demo.com
 #         DATACENTER_GEM_NAME: emerald
 #         KIP_ENV_ID: none
 
@@ -18,6 +18,6 @@
 #         CLUSTER_TYPE: cloud
 #         VAULT_NAMESPACE: us3/sbx_d
 #         DATACENTER_CODE_NAME: us3
-#         INGRESS_HOSTNAME_SUFFIX: opal.dmo.cloud.kyriba.com
+#         INGRESS_HOSTNAME_SUFFIX: opal.dmo.cloud.demo.com
 #         DATACENTER_GEM_NAME: opal
 #         KIP_ENV_ID: none
