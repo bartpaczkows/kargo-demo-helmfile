@@ -12,7 +12,7 @@
         KIP_ENV_ID: kip0
         PLATFORM_INSTANCE_ID: eng-kip-0
         CLOUD_PLATFORM_INSTANCE_ID: ci-dev
-        APP_VERSION: ""
+        APP_VERSION: next
 
 - destination:
     name: in-cluster

@@ -22,10 +22,10 @@ spec:
         name: kargo-demo-helmfile
         component: app
     spec:
-      project: dargo-demo-helmfile-dev
+      project: default
       source:
-        repoURL: {{ .Values.git.repoURL }}
-        targetRevision: {{ .Values.git.branchName }}
+        repoURL: https://github.com/bartpaczkows/kargo-demo-helmfile.git
+        targetRevision: dev
         path: '.'
         plugin:
           name: helmfile
